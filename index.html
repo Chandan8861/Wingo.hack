@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandan.wingo</title>
+  
+</head>
+<style>
+    body{
+    background-color: black;
+    text-align: center;
+}
+h1{
+    color: red;
+    margin-top: 150px;
+    font-size: 60px;
+}
+button{
+    size:500px;
+    font-size: 30px;
+
+}
+</style>
+<body>
+
+ 
+    <h1 id="head">WinGo Hack</h1>
+
+    <button id="bt">Click</button>
+    
+</body>
+<script>
+ let head=document.querySelector("#head");
+let bt=document.querySelector("#bt");
+
+
+
+bt.addEventListener("click",(e)=>{
+
+   let op=["big","small"];
+   let randIndx=Math.floor(Math.random()*2);
+   head.innerText=op[randIndx];
+    
+
+});
+</script>
+</html>
